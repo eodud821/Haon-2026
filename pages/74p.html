@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>74p</title>
+    <link rel="stylesheet" href="../css/layout.css" />
+    <link rel="stylesheet" href="../css/main.css" />
+  </head>
+  <body class="page-account page-basic-info">
+    <div class="app">
+      <aside class="sidebar">
+        <div class="sidebar-toggle-wrap">
+          <button type="button" class="sidebar-toggle" title="Toggle sidebar">
+            <img src="../image/icon-btn.svg" alt="" />
+          </button>
+        </div>
+        <div class="sidebar-body">
+          <a class="brand" href="#">
+            <img src="../image/logo.svg" alt="Haon BIOSOLUTIONS" />
+            <span class="brand-name">CROTREE</span>
+          </a>
+          <p class="acc-sidebar-label">My Account</p>
+          <nav class="nav" aria-label="My account">
+            <ul>
+              <li>
+                <a href="#">
+                  <img class="nav-icon" src="../image/menubar2/icon-gnb1-1.svg" alt="" />
+                  <span>Account Info</span>
+                </a>
+              </li>
+              <li>
+                <a class="active" href="#">
+                  <img class="nav-icon" src="../image/menubar2/icon-gnb2.svg" alt="" />
+                  <span>Basic Info</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img class="nav-icon" src="../image/menubar2/icon-gnb3.svg" alt="" />
+                  <span>Company Info</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img class="nav-icon" src="../image/menubar2/icon-gnb4.svg" alt="" />
+                  <span>Staff Info</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img class="nav-icon" src="../image/menubar2/icon-gnb5.svg" alt="" />
+                  <span>Notification</span>
+                </a>
+              </li>
+            </ul>
+          </nav>
+          <div class="sidebar-foot">
+            <a class="logout" href="#">
+              <img src="../image/icon-logout.svg" alt="" />
+              <span>Logout</span>
+            </a>
+          </div>
+        </div>
+      </aside>
+
+      <div class="main">
+        <header class="topbar">
+          <div class="bell-wrap">
+            <a href="#" aria-label="notification">
+              <img src="../image/icon-bell.svg" alt="" />
+            </a>
+            <span class="badge">1</span>
+          </div>
+          <a class="avatar" href="#" aria-label="profile">
+            <img src="../image/icon-user.svg" alt="" />
+          </a>
+        </header>
+        <main class="content">
+          <h1 class="qa-detail-page-title">Basic Info</h1>
+          <div class="abi-main">
+            <section class="abi-card" aria-label="Basic profile info">
+              <div class="abi-photo-wrap">
+                <i class="icon-woman-big"></i>
+              </div>
+              <div class="abi-form-grid">
+                <label class="abi-field">
+                  <span class="abi-label">Name</span>
+                  <input class="abi-input" type="text" value="KIM Na Hyun" />
+                </label>
+                <label class="abi-field">
+                  <span class="abi-label">Join Date</span>
+                  <input class="abi-input abi-input--disabled" type="text" value="A123345" disabled />
+                </label>                
+                <div class="abi-field">
+                  <span class="abi-label">Email</span>
+                  <div class="abi-email-row">
+                    <input class="abi-input" type="email" value="Nahyun@haonbio.com" />
+                    <button type="button" class="abi-btn-check">Check Duplicate</button>
+                  </div>
+                </div>
+                <label class="abi-field">
+                  <span class="abi-label">Account ID</span>
+                  <input class="abi-input abi-input--disabled" type="text" value="KIM Na Hyun" disabled />
+                </label>
+                <ul class="abi-email-help" aria-label="Email validation message">
+                  <li class="abi-email-help-item abi-email-help-item--muted">Please Enter A Valid Email Address</li>
+                  <li class="abi-email-help-item abi-email-help-item--err">
+                    <i class="icon-redstar"></i>
+                    <span>Invalid Email Format.</span>
+                  </li>
+                  <li class="abi-email-help-item abi-email-help-item--err">
+                    <i class="icon-redstar"></i>
+                    <span>This Email Is Already In Use.</span>
+                  </li>
+                </ul>
+                <label class="abi-field">
+                  <span class="abi-label">Position</span>
+                  <input class="abi-input" type="text" value="Manager" />
+                </label>
+                <label class="abi-field">
+                  <span class="abi-label">Department</span>
+                  <input class="abi-input" type="text" value="Admin" />
+                </label>
+                <label class="abi-field">
+                  <span class="abi-label">Role</span>
+                  <input class="abi-input abi-input--disabled" type="text" value="Staff" disabled />
+                </label>
+                <label class="abi-field">
+                  <span class="abi-label">Approval Status</span>
+                  <input class="abi-input abi-input--disabled" type="text" value="Pending" disabled />
+                </label>
+              </div>
+            </section>
+            <p class="abi-actions">
+              <button type="button" class="abi-save-btn">Save</button>
+            </p>
+          </div>
+        </main>
+      </div>
+    </div>
+    <script src="../js/sidebar-toggle.js"></script>
+  </body>
+</html>

@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>77p</title>
+    <link rel="stylesheet" href="../css/layout.css" />
+    <link rel="stylesheet" href="../css/main.css" />
+  </head>
+  <body class="page-account page-basic-info page-staff-info">
+    <div class="app">
+      <aside class="sidebar">
+        <div class="sidebar-toggle-wrap">
+          <button type="button" class="sidebar-toggle" title="Toggle sidebar">
+            <img src="../image/icon-btn.svg" alt="" />
+          </button>
+        </div>
+        <div class="sidebar-body">
+          <a class="brand" href="#">
+            <img src="../image/logo.svg" alt="Haon BIOSOLUTIONS" />
+            <span class="brand-name">CROTREE</span>
+          </a>
+          <p class="acc-sidebar-label">My Account</p>
+          <nav class="nav" aria-label="My account">
+            <ul>
+              <li>
+                <a href="#">
+                  <img class="nav-icon" src="../image/menubar2/icon-gnb1-1.svg" alt="" />
+                  <span>Account Info</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img class="nav-icon" src="../image/menubar2/icon-gnb2.svg" alt="" />
+                  <span>Basic Info</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img class="nav-icon" src="../image/menubar2/icon-gnb3.svg" alt="" />
+                  <span>Company Info</span>
+                </a>
+              </li>
+              <li>
+                <a class="active" href="#">
+                  <img class="nav-icon" src="../image/menubar2/icon-gnb4.svg" alt="" />
+                  <span>Staff Info</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img class="nav-icon" src="../image/menubar2/icon-gnb5.svg" alt="" />
+                  <span>Notification</span>
+                </a>
+              </li>
+            </ul>
+          </nav>
+          <div class="sidebar-foot">
+            <a class="logout" href="#"><img src="../image/icon-logout.svg" alt="" /><span>Logout</span></a>
+          </div>
+        </div>
+      </aside>
+
+      <div class="main">
+        <header class="topbar">
+          <div class="bell-wrap">
+            <a href="#" aria-label="notification">
+              <img src="../image/icon-bell.svg" alt="" />
+            </a>
+            <span class="badge">1</span>
+          </div>
+          <a class="avatar" href="#" aria-label="profile">
+            <img src="../image/icon-user.svg" alt="" />
+          </a>
+        </header>
+        <main class="content">
+          <h1 class="qa-detail-page-title">Staff Info</h1>
+          <div class="abi-main">
+            <section class="abi-card abi-card--plain" aria-label="Staff info form">
+              <div class="abi-form-grid">
+                <label class="abi-field">
+                  <span class="abi-label">No.</span>
+                  <input class="abi-input abi-input--disabled" type="text" value="1" disabled />
+                </label>
+                <label class="abi-field">
+                  <span class="abi-label">Join Date</span>
+                  <input class="abi-input abi-input--disabled" type="text" value="2024.01.14" disabled />
+                </label>
+                <label class="abi-field">
+                  <span class="abi-label">Name</span>
+                  <input class="abi-input" type="text" value="Kate Kim" />
+                </label>
+                <label class="abi-field">
+                  <span class="abi-label">Email</span>
+                  <input class="abi-input" type="email" value="kate@schjoice.co" />
+                </label>
+                <label class="abi-field">
+                  <span class="abi-label">Position</span>
+                  <input class="abi-input" type="text" value="Manager" />
+                </label>
+                <label class="abi-field">
+                  <span class="abi-label">Department</span>
+                  <input class="abi-input" type="text" value="Admin" />
+                </label>
+                <fieldset class="abi-field abi-radio-field">
+                  <legend class="abi-label">Role</legend>
+                  <div class="abi-radio-group">
+                    <label class="abi-radio-item"><input type="radio" name="role" checked /><span>Study Director</span></label>
+                    <label class="abi-radio-item"><input type="radio" name="role" /><span>Technician</span></label>
+                    <label class="abi-radio-item"><input type="radio" name="role" /><span>Analyst</span></label>
+                    <label class="abi-radio-item"><input type="radio" name="role" /><span>QA</span></label>
+                  </div>
+                </fieldset>
+                <fieldset class="abi-field abi-radio-field">
+                  <legend class="abi-label">Approval Status</legend>
+                  <div class="abi-radio-group abi-radio-group--status">
+                    <label class="abi-radio-item"><input type="radio" name="approval" checked /><span>Pending</span></label>
+                    <label class="abi-radio-item"><input type="radio" name="approval" /><span>Approved</span></label>
+                    <label class="abi-radio-item"><input type="radio" name="approval" /><span>Rejected</span></label>
+                  </div>
+                </fieldset>
+              </div>
+            </section>
+            <p class="abi-actions">
+              <button type="button" class="abi-save-btn">Save</button>
+            </p>
+          </div>
+        </main>
+      </div>
+    </div>
+    <script src="../js/sidebar-toggle.js"></script>
+  </body>
+</html>
