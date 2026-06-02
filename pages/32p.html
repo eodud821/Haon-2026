@@ -1,0 +1,234 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>32p</title>
+    <link rel="stylesheet" href="../css/layout.css" />
+    <link rel="stylesheet" href="../css/main.css" />
+  </head>
+  <body>
+    <div class="app">
+      <aside class="sidebar">
+        <div class="sidebar-toggle-wrap">
+          <button type="button" class="sidebar-toggle" title="Toggle sidebar">
+            <img src="../image/icon-btn.svg" alt="" />
+          </button>
+        </div>
+        <div class="sidebar-body">
+          <a class="brand" href="#">
+            <img src="../image/logo.svg" alt="Haon BIOSOLUTIONS" />
+            <span class="brand-name">CROTREE</span>
+          </a>
+          <nav class="nav">
+            <ul>
+              <li>
+                <a href="#">
+                  <img class="nav-icon"src="../image/menubar/icon-dashboard.svg" alt=""/>
+                  <span>Dashboard</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img class="nav-icon" src="../image/menubar/icon-clients.svg" alt=""/>
+                  <span>Clients</span>
+                </a>
+              </li>
+              <li>
+                <a class="active" href="#">
+                  <img class="nav-icon" src="../image/menubar/icon-project.svg" alt=""/>
+                  <span>Projects</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img class="nav-icon" src="../image/menubar/icon-testprep.svg" alt=""/>
+                  <span>Test Prep</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img class="nav-icon" src="../image/menubar/icon-logs.svg" alt=""/>
+                  <span>Logs</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img class="nav-icon" src="../image/menubar/icon-chat.svg" alt=""/>
+                  <span>Chat</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img class="nav-icon" src="../image/menubar/icon-qa.svg" alt=""/>
+                  <span>QA Comment</span>
+                </a>
+              </li>
+            </ul>
+          </nav>
+
+          <div class="sidebar-foot">
+            <a class="logout" href="#">
+              <img src="../image/icon-logout.svg" alt="" />
+              <span>Logout</span> 
+            </a>
+          </div>
+        </div>
+      </aside>
+      <div class="main">
+        <header class="topbar">
+          <div class="bell-wrap">
+            <a href="#" aria-label="notification">
+              <img src="../image/icon-bell.svg" alt="" />
+            </a>
+            <span class="badge">2</span>
+          </div>
+          <a class="avatar" href="#" aria-label="profile">
+            <img src="../image/icon-user.svg" alt="" />
+          </a>
+        </header>
+        <main class="content">
+          <section class="tp-head">
+            <h1>Test &amp; Progress</h1>
+            <p>Manage test schedules and test methods.</p>
+          </section>
+
+          <section class="tp-section">
+            <h2 class="tp-section-title">Test&amp;progress</h2>
+            <div class="ta-grid">
+              <div class="ta-row">
+                <label>Test Description <i class="icon-item"></i></label>
+                <div class="ta-field"><select><option>Select</option></select></div>
+              </div>
+              <div class="ta-row">
+                <label>Sample ID</label>
+                <div class="ta-field"><select><option>Select</option></select></div>
+              </div>
+            </div>
+          </section>
+
+          <section class="tp-section">
+            <h2 class="tp-section-title">Test Progress Dates(Due)</h2>
+            <div class="ta-grid tp-dates-grid">
+              <div class="ta-row">
+                <label>1. Test Article Arrival Date <i class="icon-item"></i></label>
+                <div class="ta-field ta-field--date">
+                  <input type="text" placeholder="YYYY/MM/DD" />
+                  <i class="icon-calendar"></i>
+                </div>
+              </div>
+              <div class="ta-row">
+                <label>4. Preliminary Report Issued Date <i class="icon-item"></i></label>
+                <div class="ta-field ta-field--date">
+                  <input type="text" placeholder="YYYY/MM/DD" />
+                  <i class="icon-calendar"></i>
+                </div>
+              </div>
+              <div class="ta-row">
+                <label>2. Testing Start Date <i class="icon-item"></i></label>
+                <div class="ta-field ta-field--date">
+                  <input type="text" placeholder="YYYY/MM/DD" />
+                  <i class="icon-calendar"></i>
+                </div>
+              </div>
+              <div class="ta-row">
+                <label>5. Customer Feedback Receipt Date <i class="icon-item"></i></label>
+                <div class="ta-field ta-field--date">
+                  <input type="text" placeholder="YYYY/MM/DD" />
+                  <i class="icon-calendar"></i>
+                </div>
+              </div>
+              <div class="ta-row">
+                <label>3. Test Completion Date <i class="icon-item"></i></label>
+                <div class="ta-field ta-field--date">
+                  <input type="text" placeholder="YYYY/MM/DD" />
+                  <i class="icon-calendar"></i>
+                </div>
+              </div>
+              <div class="ta-row">
+                <label>6. Final Report Issued Date <i class="icon-item"></i></label>
+                <div class="ta-field ta-field--date">
+                  <input type="text" placeholder="YYYY/MM/DD" />
+                  <i class="icon-calendar"></i>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section class="tp-section">
+            <div class="tp-method-bar">
+              <h2 class="tp-section-title">Test Method</h2>
+              <div class="tp-segments" role="tablist" aria-label="Test type">
+                <button type="button" class="active">Cell</button>
+                <button type="button">Animal</button>
+                <button type="button">Chemical</button>
+              </div>
+            </div>
+            <div class="ta-grid tp-method-grid">
+              <div class="ta-row">
+                <label>Cell <i class="icon-item"></i></label>
+                <div class="ta-field"><input type="text" placeholder="" /></div>
+              </div>
+              <div class="ta-row">
+                <label>Cell Density</label>
+                <div class="ta-field"><input type="text" placeholder="" /></div>
+              </div>
+              <div class="ta-row">
+                <label>Test Method <i class="icon-item"></i></label>
+                <div class="ta-field"><input type="text" placeholder="empty" /></div>
+              </div>
+              <div class="ta-row">
+                <label>Flask Number</label>
+                <div class="ta-field"><input type="text" value="0" /></div>
+              </div>
+              <div class="ta-row">
+                <label>Treated TA Amount [mL/flask]</label>
+                <div class="ta-field"><input type="text" value="0.000" /></div>
+              </div>
+              <div class="ta-row">
+                <label>Regulatory Reference <i class="icon-item"></i></label>
+                <div class="ta-field"><input type="text" placeholder="empty" /></div>
+              </div>
+              <div class="ta-row">
+                <label>Treated TA Conc. [mg/mL]</label>
+                <div class="ta-field"><input type="text" value="0.000" /></div>
+              </div>
+              <div class="ta-row">
+                <label>Experimental Replication</label>
+                <div class="ta-field"><select><option>Select</option></select></div>
+              </div>
+              <div class="ta-row">
+                <label>Media Mycoplasma test <i class="icon-item"></i></label>
+                <div class="ta-field"><select><option>Placeholder</option></select></div>
+              </div>
+            </div>
+          </section>
+
+          <section class="tp-section">
+            <h2 class="tp-section-title">Test Progress and Status</h2>
+            <div class="ta-grid tp-grid-single tp-status-grid">
+              <div class="ta-row">
+                <label>Progress <i class="icon-item"></i></label>
+                <div class="ta-field"><input type="text" value="0%" /></div>
+              </div>
+              <div class="ta-row">
+                <label>Status</label>
+                <div class="ta-field"><select><option>In Progress</option></select></div>
+              </div>
+            </div>
+          </section>
+
+          <div class="ta-actions">
+            <button type="button" class="btn-delete">delete</button>
+            <div class="ta-actions-right">
+              <button type="button" class="btn-cancel">Cancel</button>
+              <button type="button" class="btn-save">Save</button>
+            </div>
+          </div>
+        </main>
+      </div>
+    </div>
+    <script src="../js/sidebar-toggle.js"></script>
+    <script src="../js/ui-controls.js"></script>
+  </body>
+</html>

@@ -1,0 +1,274 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>28p</title>
+    <link rel="stylesheet" href="../css/layout.css" />
+    <link rel="stylesheet" href="../css/main.css" />
+  </head>
+  <body>
+    <div class="app">
+      <aside class="sidebar">
+        <div class="sidebar-toggle-wrap">
+          <button type="button" class="sidebar-toggle" title="Toggle sidebar">
+            <img src="../image/icon-btn.svg" alt="" />
+          </button>
+        </div>
+        <div class="sidebar-body">
+          <a class="brand" href="#">
+            <img src="../image/logo.svg" alt="Haon BIOSOLUTIONS" />
+            <span class="brand-name">CROTREE</span>
+          </a>
+          <nav class="nav">
+            <ul>
+              <li>
+                <a href="#">
+                  <img class="nav-icon"src="../image/menubar/icon-dashboard.svg" alt=""/>
+                  <span>Dashboard</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img class="nav-icon" src="../image/menubar/icon-clients.svg" alt=""/>
+                  <span>Clients</span>
+                </a>
+              </li>
+              <li>
+                <a class="active" href="#">
+                  <img class="nav-icon" src="../image/menubar/icon-project.svg" alt=""/>
+                  <span>Projects</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img class="nav-icon" src="../image/menubar/icon-testprep.svg" alt=""/>
+                  <span>Test Prep</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img class="nav-icon" src="../image/menubar/icon-logs.svg" alt=""/>
+                  <span>Logs</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img class="nav-icon" src="../image/menubar/icon-chat.svg" alt=""/>
+                  <span>Chat</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img class="nav-icon" src="../image/menubar/icon-qa.svg" alt=""/>
+                  <span>QA Comment</span>
+                </a>
+              </li>
+            </ul>
+          </nav>
+
+          <div class="sidebar-foot">
+            <a class="logout" href="#">
+              <img src="../image/icon-logout.svg" alt="" />
+              <span>Logout</span> 
+            </a>
+          </div>
+        </div>
+      </aside>
+      <div class="main">
+        <header class="topbar">
+          <div class="bell-wrap">
+            <a href="#" aria-label="notification">
+              <img src="../image/icon-bell.svg" alt="" />
+            </a>
+            <span class="badge">2</span>
+          </div>
+          <a class="avatar" href="#" aria-label="profile">
+            <img src="../image/icon-user.svg" alt=""/>
+          </a>
+        </header>
+        <main class="content">
+          <div class="project-head">
+            <h1>Project List</h1>
+          </div>
+          <div class="project-toolbar">
+            <div class="client-toolbar">
+              <i class="icon-search"></i>
+              <input class="client-search" type="text" placeholder="Project Name"/>
+            </div>
+            <div class="project-filters-wrap">
+              <div class="project-filters">
+                <button type="button" class="project-filter active">
+                  Start Date
+                </button>
+                <button type="button" class="project-filter">
+                  company name
+                </button>
+                <button type="button" class="project-filter">
+                  project name
+                </button>
+              </div>
+              <button type="button" class="project-filter select">
+                In progress
+                <i class="icon-arrow"></i>
+              </button>
+            </div>
+          </div>
+
+          <section class="project-card-grid">
+            <article class="project-card">
+              <div class="project-card-top">
+                <i class="icon-list1"></i>
+                <span class="project-chip pending">Pending</span>
+              </div>
+              <p class="project-company">Cative Therapeutics</p>
+              <h3>Phase I Evaluation Of Novel Anti-Cancer Antibody</h3>
+              <div class="project-meta">
+                <span>
+                  <i class="icon-cell"></i>
+                  Cell
+                  <span class="meta-count">1</span></span>
+                <span>
+                  <i class="icon-animal"></i>
+                  Animal
+                  <span class="meta-count">7</span></span>
+                <span>
+                  <i class="icon-chemical"></i>
+                  Chemical
+                <span class="meta-count">2</span></span>
+              </div>
+              <p class="project-progress">82<span>%</span></p>
+              <p class="project-date">
+                <span class="label">Start</span><span>2025.04.16</span>
+                <span class="divider"></span><span class="label">End</span>
+                <span>2025.03.17</span>
+              </p>
+            </article>
+
+            <article class="project-card active">
+              <div class="project-card-top">
+                <i class="icon-list2"></i>
+                <span class="project-chip inprogress">In Progress</span>
+              </div>
+              <p class="project-company">Biosimilar MAB</p>
+              <h3>Preclinical Study Of A Drug Candidate For Immune Disease Therapy</h3>
+              <div class="project-meta">
+                <span>
+                  <i class="icon-cell"></i>
+                  Cell
+                <span class="meta-count">3</span></span>
+                <span>
+                  <i class="icon-animal"></i>
+                  Animal
+                <span class="meta-count">3</span></span>
+                <span>
+                  <i class="icon-chemical"></i>
+                  Chemical 
+                <span class="meta-count">2</span></span>
+              </div>
+              <p class="project-progress">40<span>%</span></p>
+              <p class="project-date">
+                <span class="label">Start</span><span>2025.02.25</span>
+                <span class="divider"></span><span class="label">End</span>
+                <span>2025.02.28</span>
+              </p>
+              <div class="project-pointer">
+                <span class="project-pointer-dot"></span>
+                <i class="icon-pointer"></i>
+              </div>
+            </article>
+
+            <article class="project-card">
+              <div class="project-card-top">
+                <i class="icon-list3"></i>
+                <span class="project-chip completed">Completed</span>
+              </div>
+              <p class="project-company">ImmuneCore Bioscience</p>
+              <h3>Development Of T-Cell Activating Therapeutic</h3>
+              <div class="project-meta">
+                <span>
+                  <i class="icon-cell"></i>
+                  Cell
+                <span class="meta-count">6</span></span>
+                <span>
+                  <i class="icon-animal"></i>
+                  Animal
+                <span class="meta-count">2</span></span>
+                <span>
+                  <i class="icon-chemical"></i>
+                  Chemical
+                <span class="meta-count">4</span></span>
+              </div>
+              <p class="project-progress">17<span>%</span></p>
+              <p class="project-date">
+                <span class="label">Start</span><span>2025.04.25</span>
+                <span class="divider"></span><span class="label">End</span>
+                <span>2025.06.28</span>
+              </p>
+            </article>
+
+            <article class="project-card">
+              <div class="project-card-top">
+                <i class="icon-list4"></i>
+                <span class="project-chip pending">Pending</span>
+              </div>
+              <p class="project-company">Cative Therapeutics</p>
+              <h3>Phase I Evaluation Of Novel Anti-Cancer Antibody</h3>
+              <div class="project-meta">
+                <span>
+                  <i class="icon-cell"></i>
+                  Cell
+                  <span class="meta-count">1</span></span>
+                <span>
+                  <i class="icon-animal"></i>
+                  Animal
+                <span class="meta-count">7</span></span>
+                <span>
+                  <i class="icon-chemical"></i>
+                  Chemical
+                <span class="meta-count">2</span></span>
+              </div>
+              <p class="project-progress">73<span>%</span></p>
+              <p class="project-date">
+                <span class="label">Start</span><span>2025.04.16</span>
+                <span class="divider"></span><span class="label">End</span>
+                <span>2025.03.17</span>
+              </p>
+            </article>
+
+            <article class="project-card">
+              <div class="project-card-top">
+                <i class="icon-list5"></i>
+                <span class="project-chip inprogress">In Progress</span>
+              </div>
+              <p class="project-company">ImmuneCore Bioscience</p>
+              <h3>Development Of T-Cell Activating Therapeutic</h3>
+              <div class="project-meta">
+                <span>
+                  <i class="icon-cell"></i>
+                  Cell
+                <span class="meta-count">6</span></span>
+                <span>
+                  <i class="icon-animal"></i>
+                  Animal
+                <span class="meta-count">2</span></span>
+                <span>
+                  <i class="icon-chemical"></i>
+                  Chemical
+                <span class="meta-count">4</span></span>
+              </div>
+              <p class="project-progress">36<span>%</span></p>
+              <p class="project-date">
+                <span class="label">Start</span><span>2025.04.25</span>
+                <span class="divider"></span><span class="label">End</span>
+                <span>2025.06.28</span>
+              </p>
+            </article>
+          </section>
+        </main>
+      </div>
+    </div>
+    <script src="../js/sidebar-toggle.js"></script>
+    <script src="../js/ui-controls.js"></script>
+  </body>
+</html>

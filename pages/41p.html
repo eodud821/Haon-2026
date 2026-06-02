@@ -1,0 +1,345 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>41p</title>
+    <link rel="stylesheet" href="../css/layout.css" />
+    <link rel="stylesheet" href="../css/main.css" />
+  </head>
+  <body>
+    <div class="app">
+      <aside class="sidebar">
+        <div class="sidebar-toggle-wrap">
+          <button type="button" class="sidebar-toggle" title="Toggle sidebar">
+            <img src="../image/icon-btn.svg" alt="" />
+          </button>
+        </div>
+        <div class="sidebar-body">
+          <a class="brand" href="#">
+            <img src="../image/logo.svg" alt="Haon BIOSOLUTIONS" />
+            <span class="brand-name">CROTREE</span>
+          </a>
+          <nav class="nav">
+            <ul>
+              <li>
+                <a href="#">
+                  <img class="nav-icon"src="../image/menubar/icon-dashboard.svg" alt=""/>
+                  <span>Dashboard</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img class="nav-icon" src="../image/menubar/icon-clients.svg" alt=""/>
+                  <span>Clients</span>
+                </a>
+              </li>
+              <li>
+                <a class="active" href="#">
+                  <img class="nav-icon" src="../image/menubar/icon-project.svg" alt=""/>
+                  <span>Projects</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img class="nav-icon" src="../image/menubar/icon-testprep.svg" alt=""/>
+                  <span>Test Prep</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img class="nav-icon" src="../image/menubar/icon-logs.svg" alt=""/>
+                  <span>Logs</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img class="nav-icon" src="../image/menubar/icon-chat.svg" alt=""/>
+                  <span>Chat</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img class="nav-icon" src="../image/menubar/icon-qa.svg" alt=""/>
+                  <span>QA Comment</span>
+                </a>
+              </li>
+            </ul>
+          </nav>
+
+          <div class="sidebar-foot">
+            <a class="logout" href="#">
+              <img src="../image/icon-logout.svg" alt="" />
+              <span>Logout</span> 
+            </a>
+          </div>
+        </div>
+      </aside>
+      <div class="main">
+        <header class="topbar">
+          <div class="bell-wrap">
+            <a href="#" aria-label="notification">
+              <img src="../image/icon-bell.svg" alt="" />
+            </a>
+            <span class="badge">2</span>
+          </div>
+          <a class="avatar" href="#" aria-label="profile">
+            <img src="../image/icon-user.svg" alt="" />
+          </a>
+        </header>
+        <main class="content">
+          <section class="study-head">
+            <div class="study-head-title">
+              <p class="study-contract">contract no. 12345</p>
+              <h1>Preclinical Study Of A Drug Candidate<br />For Immue Disease Theraphy</h1>
+            </div>
+            <div class="study-progress-box">
+              <i class="icon-graph"></i>
+              <div class="study-progress-text">
+                <p class="value">40<span>%</span></p>
+                <p class="label">Project Progress</p>
+              </div>
+            </div>
+          </section>
+
+          <section class="study-info">
+            <h2>Project Info</h2>
+            <div class="study-info-grid">
+              <article class="study-info-card">
+                <i class="icon-company"></i>
+                <div>
+                  <p class="k">Company Name</p>
+                  <p class="v">Biosimilar MAB</p>
+                </div>
+              </article>
+              <article class="study-info-card">
+                <i class="icon-startdate"></i>
+                <div>
+                  <p class="k">Start Date</p>
+                  <p class="v">2024.10.15</p>
+                </div>
+              </article>
+              <article class="study-info-card">
+                <i class="icon-enddate"></i>
+                <div>
+                  <p class="k">End Date</p>
+                  <p class="v">2024.12.20</p>
+                </div>
+              </article>
+              <article class="study-info-card">
+                <i class="icon-project"></i>
+                <div>
+                  <p class="k">Project Status</p>
+                  <p class="v">In-Progress</p>
+                </div>
+              </article>
+            </div>
+          </section>
+
+          <nav class="study-tabs" aria-label="Project tabs">
+            <button type="button">Test article</button>
+            <button type="button">Test&Progress</button>
+            <button type="button">equipment&material</button>
+            <button type="button" class="active">Test method</button>
+            <button type="button">test result</button>
+            <button type="button">project team</button>
+            <button type="button">document</button>
+            <button type="button">dashboard</button>
+          </nav>
+
+          <section class="study-table-section method-tables">
+            <h3 class="method-main-title">Test Method</h3>
+            <h3 class="method-table-title">Test Method (Cell)</h3>
+            <div class="study-table-wrap">
+              <table class="study-table method-table">
+                <thead>
+                  <tr>
+                    <th>NO.</th>
+                    <th>Cell Line</th>
+                    <th>Media<br>Mycoplasma Test</th>
+                    <th>Regulatory Reference</th>
+                    <th>Cell Density<br>[cells/flask]</th>
+                    <th>Flask Number</th>
+                    <th>Treated TA Conc.<br>[mg/mL]</th>
+                    <th>Treated TA Amount<br>[mL/flask]</th>
+                    <th>Experimental<br>Replication</th>
+                    <th>SOP</th>
+                    <th>Edit</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>1</td>
+                    <td>A549</td>
+                    <td>Y</td>
+                    <td>EMEA</td>
+                    <td>1 x10^6 cells/T-75 flask</td>
+                    <td>3</td>
+                    <td>0.01</td>
+                    <td>0.01</td>
+                    <td>SINGLE</td>
+                    <td>
+                      <a href="#" class="method-icon-link" aria-label="SOP">
+                        <i class="icon-file"></i>
+                      </a>
+                    </td>
+                    <td>
+                      <button type="button" class="method-icon-btn" aria-label="Edit">
+                        <i class="icon-edit"></i>
+                      </button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>1</td>
+                    <td>A549</td>
+                    <td>Y</td>
+                    <td>EMEA</td>
+                    <td>1 x10^6 cells/T-75 flask</td>
+                    <td>3</td>
+                    <td>0.01</td>
+                    <td>0.01</td>
+                    <td>SINGLE</td>
+                    <td>
+                      <a href="#" class="method-icon-link" aria-label="SOP">
+                        <i class="icon-file"></i>
+                      </a>
+                    </td>
+                    <td>
+                      <button type="button" class="method-icon-btn" aria-label="Edit">
+                        <i class="icon-edit"></i>
+                      </button>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <h3 class="method-table-title">Test Method (Animal)</h3>
+            <div class="study-table-wrap">
+              <table class="study-table method-table">
+                <thead>
+                  <tr>
+                    <th>NO</th>
+                    <th>Animal</th>
+                    <th>Route of Administration</th>
+                    <th>Regulatory Reference</th>
+                    <th>Dose Level</th>
+                    <th>Number of Animal</th>
+                    <th>Treated TA Conc. [mg/mL]</th>
+                    <th>Treated Dose [mg/kg]</th>
+                    <th>SOP</th>
+                    <th>Edit</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>1</td>
+                    <td>A549</td>
+                    <td>Parenteral</td>
+                    <td>EMEA</td>
+                    <td>High</td>
+                    <td>3</td>
+                    <td>0.01</td>
+                    <td>4.55</td>
+                    <td>
+                      <a href="#" class="method-icon-link" aria-label="SOP">
+                        <i class="icon-file"></i>
+                      </a>
+                    </td>
+                    <td>
+                      <button type="button" class="method-icon-btn" aria-label="Edit">
+                        <i class="icon-edit"></i>
+                      </button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>1</td>
+                    <td>A549</td>
+                    <td>Parenteral</td>
+                    <td>EMEA</td>
+                    <td>High</td>
+                    <td>3</td>
+                    <td>0.01</td>
+                    <td>4.55</td>
+                    <td>
+                      <a href="#" class="method-icon-link" aria-label="SOP">
+                        <i class="icon-file"></i>
+                      </a>
+                    </td>
+                    <td>
+                      <button type="button" class="method-icon-btn" aria-label="Edit">
+                        <i class="icon-edit"></i>
+                      </button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>1</td>
+                    <td>A549</td>
+                    <td>Parenteral</td>
+                    <td>EMEA</td>
+                    <td>High</td>
+                    <td>3</td>
+                    <td>0.01</td>
+                    <td>4.55</td>
+                    <td>
+                      <a href="#" class="method-icon-link" aria-label="SOP">
+                        <i class="icon-file"></i>
+                      </a>
+                    </td>
+                    <td>
+                      <button type="button" class="method-icon-btn" aria-label="Edit">
+                        <i class="icon-edit"></i>
+                      </button>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <h3 class="method-table-title">Test Method (Chemical)</h3>
+            <div class="study-table-wrap">
+              <table class="study-table method-table">
+                <thead>
+                  <tr>
+                    <th>NO</th>
+                    <th>Assay Type</th>
+                    <th>Practice Guideline</th>
+                    <th>Readout</th>
+                    <th>Treated TA Conc. [mg/mL]</th>
+                    <th>Temperature [°C]</th>
+                    <th>Experimental Replication</th>
+                    <th>SOP</th>
+                    <th>Edit</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>1</td>
+                    <td>Stability</td>
+                    <td>MFDS</td>
+                    <td>% inhibition</td>
+                    <td>0.005</td>
+                    <td>12</td>
+                    <td>TRIPLICATE</td>
+                    <td>
+                      <a href="#" class="method-icon-link" aria-label="SOP">
+                        <i class="icon-file"></i>
+                      </a>
+                    </td>
+                    <td>
+                      <button type="button" class="method-icon-btn" aria-label="Edit">
+                        <i class="icon-edit"></i>
+                      </button>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </section>
+        </main>
+      </div>
+    </div>
+    <script src="../js/sidebar-toggle.js"></script>
+    <script src="../js/ui-controls.js"></script>
+  </body>
+</html>

@@ -1,0 +1,269 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>23p</title>
+    <link rel="stylesheet" href="../css/layout.css" />
+    <link rel="stylesheet" href="../css/main.css" />
+  </head>
+  <body>
+    <div class="app">
+      <aside class="sidebar">
+        <div class="sidebar-toggle-wrap">
+          <button type="button" class="sidebar-toggle" title="Toggle sidebar">
+            <img src="../image/icon-btn.svg" alt="" />
+          </button>
+        </div>
+
+        <div class="sidebar-body">
+          <a class="brand" href="#">
+            <img src="../image/logo.svg" alt="Haon BIOSOLUTIONS" />
+            <span class="brand-name">CROTREE</span>
+          </a>
+          <nav class="nav">
+            <ul>
+              <li>
+                <a href="#">
+                  <img class="nav-icon"src="../image/menubar/icon-dashboard.svg" alt=""/>
+                  <span>Dashboard</span>
+                </a>
+              </li>
+              <li>
+                <a class="active" href="#">
+                  <img class="nav-icon" src="../image/menubar/icon-clients.svg" alt=""/>
+                  <span>Clients</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img class="nav-icon" src="../image/menubar/icon-project.svg" alt=""/>
+                  <span>Projects</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img class="nav-icon" src="../image/menubar/icon-testprep.svg" alt=""/>
+                  <span>Test Prep</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img class="nav-icon" src="../image/menubar/icon-logs.svg" alt=""/>
+                  <span>Logs</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img class="nav-icon" src="../image/menubar/icon-chat.svg" alt=""/>
+                  <span>Chat</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img class="nav-icon" src="../image/menubar/icon-qa.svg" alt=""/>
+                  <span>QA Comment</span>
+                </a>
+              </li>
+            </ul>
+          </nav>
+
+          <div class="sidebar-foot">
+            <a class="logout" href="#">
+              <img src="../image/icon-logout.svg" alt="" />
+              <span>Logout</span> 
+            </a>
+          </div>
+        </div>
+      </aside>
+
+      <div class="main">
+        <header class="topbar">
+          <div class="bell-wrap">
+            <a href="#" aria-label="notification">
+              <img src="../image/icon-bell.svg" alt=""/>
+            </a>
+            <span class="badge">2</span>
+          </div>
+          <a class="avatar" href="#" aria-label="profile">
+            <img src="../image/icon-user.svg" alt=""/>
+          </a>
+        </header>
+
+        <main class="content">
+          <div class="client-head">
+            <h1>Client List</h1>
+          </div>
+
+          <div class="client-meta">
+            <p class="client-total">Total <strong>15</strong></p>
+            <div class="client-toolbar">
+              <i class="icon-search"></i>
+              <input class="client-search" type="text" placeholder="Company name"/>
+            </div>
+          </div>
+
+          <section class="client-table-wrap">
+            <table class="client-table">
+              <thead>
+                <tr>
+                  <th>NO</th>
+                  <th>join date</th>
+                  <th>Company Name</th>
+                  <th>adress</th>
+                  <th>founded</th>
+                  <th>Homepage</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1</td>
+                  <td>2022.04.23</td>
+                  <td>BiosimilarMAB</td>
+                  <td>Biopharm street, Incheon</td>
+                  <td>2014.10.30</td>
+                  <td>http://www.biosimilar-korea.com/</td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td>2022.05.12</td>
+                  <td>mRNAcom</td>
+                  <td>27 Healthpark St, Osaka, Japan</td>
+                  <td>2022.05.12</td>
+                  <td>http://www.mrnacom.kr/</td>
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td>2020.03.18</td>
+                  <td>BiosimilarMAB</td>
+                  <td>44 Riverfront Rd, Vancouver, Canada</td>
+                  <td>2020.03.18</td>
+                  <td>http://www.biosimilar-korea.com/</td>
+                </tr>
+                <tr>
+                  <td>4</td>
+                  <td>2024.01.12</td>
+                  <td>GenomicTech</td>
+                  <td>101 Harbor Lane, Boston, MA, USA</td>
+                  <td>2024.03.02</td>
+                  <td>http://www.neomedix.jp/</td>
+                </tr>
+                <tr>
+                  <td>5</td>
+                  <td>2020.03.18</td>
+                  <td>mRNA Solutions</td>
+                  <td>12 Biohub Ave, San Diego, CA, USA</td>
+                  <td>2023.07.21</td>
+                  <td>http://www.biosynthera.ca/</td>
+                </tr>
+                <tr>
+                  <td>6</td>
+                  <td>2023.07.21</td>
+                  <td>Biocrest Pharma</td>
+                  <td>230 Sunrise Blvd, Sydney, Australia</td>
+                  <td>2020.09.08</td>
+                  <td>http://www.proteoworks.de/</td>
+                </tr>
+                <tr>
+                  <td>7</td>
+                  <td>2024.03.02</td>
+                  <td>InnoVaccine</td>
+                  <td>19 Lab Square, Munich, Germany</td>
+                  <td>2024.03.02</td>
+                  <td>http://www.innovaccine.co.uk/</td>
+                </tr>
+                <tr>
+                  <td>8</td>
+                  <td>2020.03.18</td>
+                  <td>Curogenics</td>
+                  <td>55 Greenfield Ct, London, UK</td>
+                  <td>2020.03.18</td>
+                  <td>http://www.neomedix.jp/</td>
+                </tr>
+                <tr>
+                  <td>9</td>
+                  <td>2020.03.18</td>
+                  <td>OmegaBio</td>
+                  <td>7 Crescent Way, Singapore</td>
+                  <td>2023.07.21</td>
+                  <td>http://www.biosynthera.ca/</td>
+                </tr>
+                <tr>
+                  <td>10</td>
+                  <td>2024.03.02</td>
+                  <td>ProteoWorks</td>
+                  <td>12 Biohub Ave, San Diego, CA, USA</td>
+                  <td>2022.05.12</td>
+                  <td>http://www.proteoworks.de/</td>
+                </tr>
+                <tr>
+                  <td>11</td>
+                  <td>2023.07.21</td>
+                  <td>BioSyn Therapeutics</td>
+                  <td>19 Lab Square, Munich, Germany</td>
+                  <td>2024.01.12</td>
+                  <td>http://www.innovaccine.co.uk/</td>
+                </tr>
+                <tr>
+                  <td>12</td>
+                  <td>2021.10.04</td>
+                  <td>CellFuture Lab</td>
+                  <td>55 Greenfield Ct, London, UK</td>
+                  <td>2020.09.08</td>
+                  <td>http://www.omegabio.sg/</td>
+                </tr>
+                <tr>
+                  <td>13</td>
+                  <td>2020.09.08</td>
+                  <td>GenomicTech</td>
+                  <td>NeoMediX27 Healthpark St, Osaka, Japan</td>
+                  <td>2020.03.18</td>
+                  <td>http://www.innovaccine.co.uk/</td>
+                </tr>
+                <tr>
+                  <td>14</td>
+                  <td>2023.07.21</td>
+                  <td>InnoVaccine</td>
+                  <td>230 Sunrise Blvd, Sydney, Australia</td>
+                  <td>2021.10.04</td>
+                  <td>http://www.biocrest.com.au/</td>
+                </tr>
+                <tr>
+                  <td>15</td>
+                  <td>2024.01.12</td>
+                  <td>GenomicTech</td>
+                  <td>7 Crescent Way, Singapore</td>
+                  <td>2023.07.21</td>
+                  <td>http://www.omegabio.sg/</td>
+                </tr>
+              </tbody>
+            </table>
+          </section>
+
+          <div class="client-pagination">
+            <button class="client-page-btn icon-btn" type="button" aria-label="First page">
+              <i class="icon-First"></i>
+            </button>
+            <button class="client-page-btn icon-btn" type="button" aria-label="Previous page">
+              <i class="icon-Prev"></i>
+            </button>
+            <button class="client-page-btn active" type="button">1</button>
+            <button class="client-page-btn" type="button">2</button>
+            <button class="client-page-btn" type="button">3</button>
+            <button class="client-page-btn icon-btn icon-btn-dot" type="button" aria-label="More pages">
+              <i class="icon-Date"></i>
+            </button>
+            <button class="client-page-btn" type="button">10</button>
+            <button class="client-page-btn icon-btn" type="button" aria-label="Next page">
+              <i class="icon-Next"></i>
+            </button>
+            <button class="client-page-btn icon-btn" type="button" aria-label="Last page">
+              <i class="icon-Last"></i>
+            </button>
+          </div>
+        </main>
+      </div>
+    </div>
+    <script src="../js/sidebar-toggle.js"></script>
+  </body>
+</html>

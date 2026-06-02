@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>53p</title>
+    <link rel="stylesheet" href="../css/layout.css" />
+    <link rel="stylesheet" href="../css/main.css" />
+  </head>
+  <body class="report-sign-modal-page">
+    <main class="report-sign-modal">
+      <header class="report-sign-modal-head">
+        <h1 class="report-sign-modal-title">Preliminary report (Cell viability)</h1>
+        <button type="button" class="report-sign-modal-close" aria-label="Close">
+          <i class="icon-close"></i>
+        </button>
+      </header>
+
+      <div class="report-sign-modal-scroll">
+        <div class="report-sign-scroll-inner">
+          <div class="report-sign-prose">
+            <h2 class="report-sign-h2">1. Introduction</h2>
+            <p>This preliminary report covers the cell viability study under the current protocol version.</p>
+            <h2 class="report-sign-h2">2. Methods</h2>
+            <p>Viability was measured using the validated assay; raw data are filed under the study ID.</p>
+            <h2 class="report-sign-h2">3. Results Summary</h2>
+            <p>Controls met acceptance criteria. Treated groups showed the expected trend versus historical controls.</p>
+            <p>The tables in this report match the locked dataset after QC sign-off.</p>
+            <p>Figures refer to archived raw files; no post-lock changes were applied.</p>
+            <h2 class="report-sign-h2">4. Notes</h2>
+            <p>Minor deviations were reviewed and judged not to affect conclusions. See appendix for details.</p>
+            <p>Signatures below confirm review of this preliminary version.</p>
+          </div>
+
+          <aside class="report-sign-sigs" aria-label="Signatures">
+            <section class="report-sign-sig">
+              <div class="report-sign-sig-labels">
+                <span class="report-sign-sig-role">Analyst</span>
+                <span class="report-sign-badge">2025-10-10 18:25</span>
+              </div>
+              <div class="report-sign-sig-slot report-sign-sig-slot--analyst" aria-hidden="true"></div>
+            </section>
+            <section class="report-sign-sig">
+              <div class="report-sign-sig-labels">
+                <span class="report-sign-sig-role">Director</span>
+                <span class="report-sign-await">Awaiting Signature</span>
+              </div>
+              <div class="report-sign-slot">Sign here</div>
+            </section>
+            <section class="report-sign-sig">
+              <div class="report-sign-sig-labels">
+                <span class="report-sign-sig-role">QA</span>
+                <span class="report-sign-await">Awaiting Signature</span>
+              </div>
+              <div class="report-sign-slot">Sign here</div>
+            </section>
+          </aside>
+        </div>
+      </div>
+
+      <footer class="report-sign-modal-footer">
+        <button type="button" class="report-sign-btn-cancel">Cancel</button>
+        <button type="button" class="report-sign-btn-save">Save</button>
+      </footer>
+    </main>
+  </body>
+</html>
