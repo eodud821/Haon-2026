@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>51p</title>
+    <link rel="stylesheet" href="../css/layout.css" />
+    <link rel="stylesheet" href="../css/main.css" />
+  </head>
+  <body>
+    <div class="app">
+      <aside class="sidebar">
+        <div class="sidebar-toggle-wrap">
+          <button type="button" class="sidebar-toggle" title="Toggle sidebar">
+            <img src="../image/icon-btn.svg" alt="" />
+          </button>
+        </div>
+        <div class="sidebar-body">
+          <a class="brand" href="#">
+            <img src="../image/logo.svg" alt="Haon BIOSOLUTIONS" />
+            <span class="brand-name">CROTREE</span>
+          </a>
+          <nav class="nav">
+            <ul>
+              <li>
+                <a href="#">
+                  <img class="nav-icon"src="../image/menubar/icon-dashboard.svg" alt=""/>
+                  <span>Dashboard</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img class="nav-icon" src="../image/menubar/icon-clients.svg" alt=""/>
+                  <span>Clients</span>
+                </a>
+              </li>
+              <li>
+                <a class="active" href="#">
+                  <img class="nav-icon" src="../image/menubar/icon-project.svg" alt=""/>
+                  <span>Projects</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img class="nav-icon" src="../image/menubar/icon-testprep.svg" alt=""/>
+                  <span>Test Prep</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img class="nav-icon" src="../image/menubar/icon-logs.svg" alt=""/>
+                  <span>Logs</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img class="nav-icon" src="../image/menubar/icon-chat.svg" alt=""/>
+                  <span>Chat</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img class="nav-icon" src="../image/menubar/icon-qa.svg" alt=""/>
+                  <span>QA Comment</span>
+                </a>
+              </li>
+            </ul>
+          </nav>
+
+          <div class="sidebar-foot">
+            <a class="logout" href="#">
+              <img src="../image/icon-logout.svg" alt="" />
+              <span>Logout</span> 
+            </a>
+          </div>
+        </div>
+      </aside>
+      <div class="main">
+        <header class="topbar">
+          <div class="bell-wrap">
+            <a href="#" aria-label="notification">
+              <img src="../image/icon-bell.svg" alt="" />
+            </a>
+            <span class="badge">2</span>
+          </div>
+          <a class="avatar" href="#" aria-label="profile">
+            <img src="../image/icon-user.svg" alt="" />
+          </a>
+        </header>
+        <main class="content">
+          <header class="mandatory-doc-head">
+            <div class="mandatory-doc-head-text">
+              <h1>Mandatory Document</h1>
+              <p>Essential documents recording every stage of the study, including the Preliminary and Final Reports</p>
+            </div>
+            <span class="mandatory-doc-id">TEST-ID : CV12345</span>
+          </header>
+
+          <section class="test-article-form">
+            <div class="ta-grid tp-grid-single">
+              <div class="ta-row">
+                <label>Test Description <span class="md-req">*</span></label>
+                <div class="ta-field">
+                  <select>
+                    <option>Test Description</option>
+                  </select>
+                </div>
+              </div>
+              <div class="ta-row">
+                <label>Test Article <span class="md-req">*</span></label>
+                <div class="ta-field">
+                  <select>
+                    <option>Test Article</option>
+                  </select>
+                </div>
+              </div>
+              <div class="ta-row">
+                <label>Document Type <span class="md-req">*</span></label>
+                <div class="ta-field">
+                  <select>
+                    <option>Preliminary report</option>
+                  </select>
+                </div>
+              </div>
+              <div class="ta-row">
+                <label>Document Name <span class="md-req">*</span></label>
+                <div class="ta-field">
+                  <input type="text" placeholder="Document Name" />
+                </div>
+              </div>
+              <div class="ta-row md-row-textarea">
+                <label>Document Summary <span class="md-req">*</span></label>
+                <div class="ta-field ta-field--textarea">
+                  <textarea id="md-summary" maxlength="200" rows="5" placeholder="Document Summary"></textarea>
+                  <span class="md-char-count" id="md-summary-count">0/200</span>
+                </div>
+              </div>
+              <div class="ta-row md-row-report">
+                <label>Report <span class="md-req">*</span></label>
+                <div class="ta-field">
+                  <button type="button" class="md-btn-create-report">Create Report</button>
+                </div>
+              </div>
+              <div class="ta-row md-row-report">
+                <label>Report</label>
+                <div class="ta-field">
+                  <div class="md-file-inline">
+                    <i class="icon-file"></i>
+                    <span class="md-file-name">Questionnaire File.PDF</span>
+                    <button type="button" class="md-btn-sign">Sign</button>
+                    <button type="button" class="md-btn-remove" aria-label="Remove file">
+                      <i class="icon-close"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="ta-row md-row-report">
+                <label>Report</label>
+                <div class="ta-field">
+                  <div class="md-file-inline">
+                    <i class="icon-file"></i>
+                    <span class="md-file-name">Questionnaire File.PDF</span>
+                    <span class="md-file-meta">2025-10-10 18:25</span>
+                    <button type="button" class="md-btn-remove" aria-label="Remove file">
+                      <i class="icon-close"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <div class="ta-actions md-doc-actions">
+            <div class="ta-actions-right">
+              <button type="button" class="btn-cancel">Cancel</button>
+              <button type="button" class="btn-save">Save</button>
+            </div>
+          </div>
+        </main>
+      </div>
+    </div>
+    <script src="../js/sidebar-toggle.js"></script>
+    <script src="../js/ui-controls.js"></script>
+  </body>
+</html>

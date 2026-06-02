@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>78p</title>
+    <link rel="stylesheet" href="../css/layout.css" />
+    <link rel="stylesheet" href="../css/main.css" />
+  </head>
+  <body class="page-account page-notification">
+    <div class="app">
+      <aside class="sidebar">
+        <div class="sidebar-toggle-wrap">
+          <button type="button" class="sidebar-toggle" title="Toggle sidebar">
+            <img src="../image/icon-btn.svg" alt="" />
+          </button>
+        </div>
+        <div class="sidebar-body">
+          <a class="brand" href="#">
+            <img src="../image/logo.svg" alt="Haon BIOSOLUTIONS" />
+            <span class="brand-name">CROTREE</span>
+          </a>
+          <p class="acc-sidebar-label">My Account</p>
+          <nav class="nav" aria-label="My account">
+            <ul>
+              <li>
+                <a href="#">
+                  <img class="nav-icon" src="../image/menubar2/icon-gnb1-1.svg" alt="" />
+                  <span>Account Info</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img class="nav-icon" src="../image/menubar2/icon-gnb2.svg" alt="" />
+                  <span>Basic Info</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img class="nav-icon" src="../image/menubar2/icon-gnb3.svg" alt="" />
+                  <span>Company Info</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img class="nav-icon" src="../image/menubar2/icon-gnb4.svg" alt="" />
+                  <span>Staff Info</span>
+                </a>
+              </li>
+              <li>
+                <a class="active" href="#">
+                  <img class="nav-icon" src="../image/menubar2/icon-gnb5.svg" alt="" />
+                  <span>Notification</span>
+                </a>
+              </li>
+            </ul>
+          </nav>
+          <div class="sidebar-foot">
+            <a class="logout" href="#">
+              <img src="../image/icon-logout.svg" alt="" />
+              <span>Logout</span>
+            </a>
+          </div>
+        </div>
+      </aside>
+
+      <div class="main">
+        <header class="topbar">
+          <div class="bell-wrap">
+            <a href="#" aria-label="notification">
+              <img src="../image/icon-bell.svg" alt="" />
+            </a>
+            <span class="badge">1</span>
+          </div>
+          <a class="avatar" href="#" aria-label="profile">
+            <img src="../image/icon-user.svg" alt="" />
+          </a>
+        </header>
+        <main class="content">
+          <h1 class="qa-detail-page-title">Notification</h1>
+          <div class="acc-main ntf-main">
+            <ul class="ntf-list" aria-label="Notification list">
+              <li class="ntf-item ntf-item--new">
+                <label class="ntf-check">
+                  <input type="checkbox" />
+                  <span class="ntf-check-ui"></span>
+                </label>
+                <i class="icon-report"></i>
+                <div class="ntf-text">
+                  <p class="ntf-type">Final Report</p>
+                  <p class="ntf-desc">The Master Sign-off on the CN12345 Final Report has been completed</p>
+                  <p class="ntf-time">2021-10-12 14:35</p>
+                </div>
+                <span class="ntf-dot" aria-hidden="true"></span>
+              </li>
+              <li class="ntf-item">
+                <label class="ntf-check">
+                  <input type="checkbox" />
+                  <span class="ntf-check-ui"></span>
+                </label>
+                <i class="icon-query"></i>
+                <div class="ntf-text">
+                  <p class="ntf-type">Query</p>
+                  <p class="ntf-desc">A new query has been assigned to you in Project CN12345 - Visit 3 SDV.</p>
+                  <p class="ntf-time">2021-10-12 14:35</p>
+                </div>
+              </li>
+              <li class="ntf-item">
+                <label class="ntf-check">
+                  <input type="checkbox" />
+                  <span class="ntf-check-ui"></span>
+                </label>
+                <i class="icon-qa"></i>
+                <div class="ntf-text">
+                  <p class="ntf-type">QA</p>
+                  <p class="ntf-desc">Protocol deviation DEV-2025-047 has been reviewed and closed by the QA team.</p>
+                  <p class="ntf-time">2021-10-12 14:35</p>
+                </div>
+              </li>
+              <li class="ntf-item">
+                <label class="ntf-check">
+                  <input type="checkbox" />
+                  <span class="ntf-check-ui"></span>
+                </label>
+                <i class="icon-security"></i>
+                <div class="ntf-text">
+                  <p class="ntf-type">Security</p>
+                  <p class="ntf-desc">Your password was changed successfully. If this wasn't you, contact your administrator.</p>
+                  <p class="ntf-time">2021-10-12 14:35</p>
+                </div>
+              </li>
+            </ul>
+            <p class="abi-actions">
+              <button type="button" class="abi-save-btn">Delete</button>
+            </p>
+          </div>
+        </main>
+      </div>
+    </div>
+    <script src="../js/sidebar-toggle.js"></script>
+  </body>
+</html>

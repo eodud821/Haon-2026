@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>73p</title>
+    <link rel="stylesheet" href="../css/layout.css" />
+    <link rel="stylesheet" href="../css/main.css" />
+  </head>
+  <body class="page-account">
+    <div class="app">
+      <aside class="sidebar">
+        <div class="sidebar-toggle-wrap">
+          <button type="button" class="sidebar-toggle" title="Toggle sidebar">
+            <img src="../image/icon-btn.svg" alt="" />
+          </button>
+        </div>
+        <div class="sidebar-body">
+          <a class="brand" href="#">
+            <img src="../image/logo.svg" alt="Haon BIOSOLUTIONS" />
+            <span class="brand-name">CROTREE</span>
+          </a>
+          <p class="acc-sidebar-label">My Account</p>
+          <nav class="nav" aria-label="My account">
+            <ul>
+              <li>
+                <a class="active" href="#">
+                  <img class="nav-icon" src="../image/menubar2/icon-gnb1.svg" alt="" />
+                  <span>Account Info</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img class="nav-icon" src="../image/menubar2/icon-gnb2.svg" alt="" />
+                  <span>Basic Info</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img class="nav-icon" src="../image/menubar2/icon-gnb3.svg" alt="" />
+                  <span>Company Info</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img class="nav-icon" src="../image/menubar2/icon-gnb4.svg" alt="" />
+                  <span>Staff Info</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img class="nav-icon" src="../image/menubar2/icon-gnb5.svg" alt="" />
+                  <span>Notification</span>
+                </a>
+              </li>
+            </ul>
+          </nav>
+          <div class="sidebar-foot">
+            <a class="logout" href="#">
+              <img src="../image/icon-logout.svg" alt="" />
+              <span>Logout</span>
+            </a>
+          </div>
+        </div>
+      </aside>
+      <div class="main">
+        <header class="topbar">
+          <div class="bell-wrap">
+            <a href="#" aria-label="notification">
+              <img src="../image/icon-bell.svg" alt="" />
+            </a>
+            <span class="badge">1</span>
+          </div>
+          <a class="avatar" href="#" aria-label="profile">
+            <img src="../image/icon-user.svg" alt="" />
+          </a>
+        </header>
+        <main class="content">
+          <h1 class="qa-detail-page-title">Account Info</h1>
+          <div class="acc-main">
+            <div class="acc-cards-row">
+              <section class="acc-card" aria-labelledby="acc-info-title">
+                <h2 id="acc-info-title" class="acc-card-title">
+                  <i class="icon-accountInfo"></i>
+                  <span>Account Info</span>
+                </h2>
+                <div class="acc-card-panel">
+                  <div class="acc-info-grid">
+                    <div class="acc-field">
+                      <p class="acc-field-label">ID</p>
+                      <p class="acc-field-value">Abcdefg</p>
+                    </div>
+                    <div class="acc-field">
+                      <p class="acc-field-label">Email</p>
+                      <p class="acc-field-value">abc@gmail.com</p>
+                    </div>
+                    <div class="acc-field">
+                      <p class="acc-field-label">Role</p>
+                      <p class="acc-field-value">Master</p>
+                    </div>
+                  </div>
+                </div>
+              </section>
+
+              <section class="acc-card" aria-labelledby="acc-pw-title">
+                <h2 id="acc-pw-title" class="acc-card-title">
+                  <i class="icon-passwordkey"></i>
+                  <span>Change Password</span>
+                </h2>
+                <div class="acc-card-panel">
+                    <div class="acc-pw-block">
+                      <label class="acc-field-label acc-field-label--block" for="acc-current-pw">Current Password</label>
+                      <div class="acc-input-wrap">
+                        <input id="acc-current-pw" class="acc-input" type="password" placeholder="Password" autocomplete="current-password" />
+                        <button type="button" class="acc-input-eye" aria-label="Show password">
+                          <i class="icon-eye"></i>
+                        </button>
+                      </div>
+                    </div>
+
+                    <div class="acc-pw-row2">
+                      <div class="acc-pw-block">
+                        <label class="acc-field-label acc-field-label--block" for="acc-new-pw">New Password</label>
+                        <div class="acc-input-wrap">
+                          <input id="acc-new-pw" class="acc-input" type="password" placeholder="Password" autocomplete="new-password" />
+                          <button type="button" class="acc-input-eye" aria-label="Show password">
+                            <i class="icon-eye"></i>
+                          </button>
+                        </div>
+                      </div>
+                      <div class="acc-pw-block">
+                        <label class="visually-hidden" for="acc-re-pw">Re-enter new password</label>
+                        <div class="acc-input-wrap acc-input-wrap--re">
+                          <input id="acc-re-pw" class="acc-input" type="password" placeholder="Re-enter" autocomplete="new-password" />
+                          <button type="button" class="acc-input-eye" aria-label="Show password">
+                            <i class="icon-eye"></i>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="acc-rules" aria-label="Password requirements">
+                      <ul class="acc-rules-col">
+                        <li class="acc-rule acc-rule--ok">
+                          <i class="icon-greencheck"></i>
+                          <span>8-15 Characters</span>
+                        </li>
+                        <li class="acc-rule acc-rule--ok">
+                          <i class="icon-greencheck"></i>
+                          <span>Include Letters</span>
+                        </li>
+                        <li class="acc-rule acc-rule--ok">
+                          <i class="icon-greencheck"></i>
+                          <span>Include Numbers</span>
+                        </li>
+                      </ul>
+                      <ul class="acc-rules-col">
+                        <li class="acc-rule acc-rule--muted">
+                          <i class="icon-graycheck"></i>
+                          <span>Include Special Characters</span>
+                        </li>
+                        <li class="acc-rule acc-rule--muted">
+                          <i class="icon-graycheck"></i>
+                          <span>Passwords Match</span>
+                        </li>
+                        <li class="acc-rule acc-rule--err">
+                          <i class="icon-redcheck"></i>
+                          <span>New Password Cannot Be The Same As The Current Password</span>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+              </section>
+            </div>
+
+            <p class="acc-delete-wrap">
+              <a href="#" class="acc-delete-link">Delete Account</a>
+            </p>
+          </div>
+        </main>
+      </div>
+    </div>
+    <script src="../js/sidebar-toggle.js"></script>
+  </body>
+</html>

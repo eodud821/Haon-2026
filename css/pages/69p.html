@@ -1,0 +1,227 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>69p</title>
+    <link rel="stylesheet" href="../css/layout.css" />
+    <link rel="stylesheet" href="../css/main.css" />
+  </head>
+  <body class="page-qa-detail">
+    <div class="app">
+      <aside class="sidebar">
+        <div class="sidebar-toggle-wrap">
+          <button type="button" class="sidebar-toggle" title="Toggle sidebar">
+            <img src="../image/icon-btn.svg" alt="" />
+          </button>
+        </div>
+        <div class="sidebar-body">
+          <a class="brand" href="#">
+            <img src="../image/logo.svg" alt="Haon BIOSOLUTIONS" />
+            <span class="brand-name">CROTREE</span>
+          </a>
+          <nav class="nav">
+            <ul>
+              <li>
+                <a href="#">
+                  <img class="nav-icon"src="../image/menubar/icon-dashboard.svg" alt=""/>
+                  <span>Dashboard</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img class="nav-icon" src="../image/menubar/icon-clients.svg" alt=""/>
+                  <span>Clients</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img class="nav-icon" src="../image/menubar/icon-project.svg" alt=""/>
+                  <span>Projects</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img class="nav-icon" src="../image/menubar/icon-testprep.svg" alt=""/>
+                  <span>Test Prep</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img class="nav-icon" src="../image/menubar/icon-logs.svg" alt=""/>
+                  <span>Logs</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img class="nav-icon" src="../image/menubar/icon-chat.svg" alt=""/>
+                  <span>Chat</span>
+                </a>
+              </li>
+              <li>
+                <a class="active" href="#">
+                  <img class="nav-icon" src="../image/menubar/icon-qa.svg" alt=""/>
+                  <span>QA Comment</span>
+                </a>
+              </li>
+            </ul>
+          </nav>
+
+          <div class="sidebar-foot">
+            <a class="logout" href="#">
+              <img src="../image/icon-logout.svg" alt="" />
+              <span>Logout</span>              
+            </a>
+          </div>
+        </div>
+      </aside>
+      <div class="main">
+        <header class="topbar">
+          <div class="bell-wrap">
+            <a href="#" aria-label="notification">
+              <img src="../image/icon-bell.svg" alt="" />
+            </a>
+            <span class="badge">2</span>
+          </div>
+          <a class="avatar" href="#" aria-label="profile">
+            <img src="../image/icon-user.svg" alt="" />
+          </a>
+        </header>
+        <main class="content">
+          <h1 class="qa-detail-page-title">QA Comment Detail</h1>
+          <article class="qa-detail-card">
+            <header class="qa-detail-post-head">
+              <p class="qa-detail-post-date">2021-10-12 14:35</p>
+              <h2 class="qa-detail-post-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i</h2>
+              <div class="qa-detail-post-author">
+                <span class="qa-detail-avatar"><i class="icon-woman1"></i></span>
+                <span class="qa-detail-post-author-name">Arenea</span>
+              </div>
+            </header>
+            <div class="qa-detail-post-divider" aria-hidden="true"></div>
+            <div class="qa-detail-post-body">
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+              </p>
+              <p>
+                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+              </p>
+              <p>
+                Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+              </p>
+            </div>
+
+            <div class="qa-detail-compose">
+              <span class="qa-detail-avatar qa-detail-avatar--user" aria-hidden="true">
+                <i class="icon-user"></i>
+              </span>
+              <label class="visually-hidden" for="qa-comment-input">Comment</label>
+              <textarea id="qa-comment-input" class="qa-detail-textarea" rows="4" placeholder="Placeholder"></textarea>
+              <button type="button" class="qa-detail-btn-add">add</button>
+            </div>
+
+            <section class="qa-detail-comments" aria-label="Comments">
+              <h3 class="qa-detail-comments-title">
+                <span>5 comments</span>
+                <button type="button" class="qa-detail-comments-chevron" aria-expanded="true" aria-label="Toggle comments list">
+                  <i class="icon-downarrow"></i>
+                </button>
+              </h3>
+
+              <article class="qa-comment">
+                <div class="qa-detail-avatar qa-comment-avatar"><i class="icon-woman2"></i></div>
+                <div class="qa-comment-main">
+                  <div class="qa-comment-top">
+                    <span class="qa-comment-name">James</span>
+                    <span class="qa-comment-spacer" aria-hidden="true"></span>
+                    <span class="qa-comment-date">2021.10.12 14:35</span>
+                    <div class="qa-comment-more-box">
+                      <button type="button" class="qa-comment-menu" aria-label="Comment options" aria-haspopup="true">
+                        <i class="icon-dot"></i>
+                      </button>
+                      <span class="qa-comment-pointer-wrap" aria-hidden="true">
+                        <span class="qa-comment-pointer-halo"></span>
+                        <span class="qa-comment-pointer-dot"></span>
+                        <i class="icon-pointer"></i>
+                      </span>
+                      <ul class="qa-comment-dropdown" role="menu">
+                        <li><button type="button" role="menuitem">Edit</button></li>
+                        <li><button type="button" role="menuitem">Delete</button></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <p class="qa-comment-body">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.
+                </p>
+              </article>
+
+              <article class="qa-comment">
+                <div class="qa-detail-avatar qa-comment-avatar"><i class="icon-woman3"></i></div>
+                <div class="qa-comment-main">
+                  <div class="qa-comment-top">
+                    <span class="qa-comment-name">Sarah</span>
+                    <span class="qa-comment-spacer" aria-hidden="true"></span>
+                    <span class="qa-comment-date">2021.10.12 14:35</span>
+                    <div class="qa-comment-more-box">
+                      <button type="button" class="qa-comment-menu" aria-label="Comment options" aria-haspopup="true">
+                        <i class="icon-dot"></i>
+                      </button>
+                      <span class="qa-comment-pointer-wrap" aria-hidden="true">
+                        <span class="qa-comment-pointer-halo"></span>
+                        <span class="qa-comment-pointer-dot"></span>
+                        <i class="icon-pointer"></i>
+                      </span>
+                      <ul class="qa-comment-dropdown" role="menu">
+                        <li><button type="button" role="menuitem">Edit</button></li>
+                        <li><button type="button" role="menuitem">Delete</button></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <p class="qa-comment-body">
+                  Confirmed. The deviation has been logged and the CAPA owner has been notified. We will follow up once the root cause summary is uploaded.
+                </p>
+              </article>
+
+              <article class="qa-comment">
+                <div class="qa-detail-avatar qa-comment-avatar"><i class="icon-woman4"></i></div>
+                <div class="qa-comment-main">
+                  <div class="qa-comment-top">
+                    <span class="qa-comment-name">Michelle</span>
+                    <span class="qa-comment-spacer" aria-hidden="true"></span>
+                    <span class="qa-comment-date">2021.10.12 14:35</span>
+                    <div class="qa-comment-more-box">
+                      <button type="button" class="qa-comment-menu" aria-label="Comment options" aria-haspopup="true">
+                        <i class="icon-dot"></i>
+                      </button>
+                      <span class="qa-comment-pointer-wrap" aria-hidden="true">
+                        <span class="qa-comment-pointer-halo"></span>
+                        <span class="qa-comment-pointer-dot"></span>
+                        <i class="icon-pointer"></i>
+                      </span>
+                      <ul class="qa-comment-dropdown" role="menu">
+                        <li><button type="button" role="menuitem">Edit</button></li>
+                        <li><button type="button" role="menuitem">Delete</button></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <p class="qa-comment-body">
+                  ICF version mismatch identified during SDV. Please reconcile against the approved amendment before next monitoring visit.
+                </p>
+              </article>
+            </section>
+
+            <footer class="qa-detail-footer">
+              <button type="button" class="qa-detail-foot-btn qa-detail-foot-btn--cancel">Cancel</button>
+              <button type="button" class="qa-detail-foot-btn qa-detail-foot-btn--delete">Delete</button>
+              <button type="button" class="qa-detail-foot-btn qa-detail-foot-btn--list">List</button>
+            </footer>
+          </article>
+        </main>
+      </div>
+    </div>
+    <script src="../js/sidebar-toggle.js"></script>
+  </body>
+</html>

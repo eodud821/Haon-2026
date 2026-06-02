@@ -1,0 +1,381 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>26p</title>
+    <link rel="stylesheet" href="../css/layout.css" />
+    <link rel="stylesheet" href="../css/main.css" />
+  </head>
+  <body>
+    <div class="app">
+      <aside class="sidebar">
+        <div class="sidebar-toggle-wrap">
+          <button type="button" class="sidebar-toggle" title="Toggle sidebar">
+            <img src="../image/icon-btn.svg" alt="" />
+          </button>
+        </div>
+
+        <div class="sidebar-body">
+          <a class="brand" href="#">
+            <img src="../image/logo.svg" alt="Haon BIOSOLUTIONS" />
+            <span class="brand-name">CROTREE</span>
+          </a>
+          <nav class="nav">
+            <ul>
+              <li>
+                <a href="#">
+                  <img class="nav-icon"src="../image/menubar/icon-dashboard.svg" alt=""/>
+                  <span>Dashboard</span>
+                </a>
+              </li>
+              <li>
+                <a class="active" href="#">
+                  <img class="nav-icon" src="../image/menubar/icon-clients.svg" alt=""/>
+                  <span>Clients</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img class="nav-icon" src="../image/menubar/icon-project.svg" alt=""/>
+                  <span>Projects</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img class="nav-icon" src="../image/menubar/icon-testprep.svg" alt=""/>
+                  <span>Test Prep</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img class="nav-icon" src="../image/menubar/icon-logs.svg" alt=""/>
+                  <span>Logs</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img class="nav-icon" src="../image/menubar/icon-chat.svg" alt=""/>
+                  <span>Chat</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img class="nav-icon" src="../image/menubar/icon-qa.svg" alt=""/>
+                  <span>QA Comment</span>
+                </a>
+              </li>
+            </ul>
+          </nav>
+
+          <div class="sidebar-foot">
+            <a class="logout" href="#">
+              <img src="../image/icon-logout.svg" alt="" />
+              <span>Logout</span> 
+            </a>
+          </div>
+        </div>
+      </aside>
+
+      <div class="main">
+        <header class="topbar">
+          <div class="bell-wrap">
+            <a href="#" aria-label="notification">
+              <img src="../image/icon-bell.svg" alt=""/>
+            </a>
+            <span class="badge">2</span>
+          </div>
+          <a class="avatar" href="#" aria-label="profile">
+            <img src="../image/icon-user.svg" alt=""/>
+          </a>
+        </header>
+
+        <main class="content">
+          <div class="client-detail-head">
+            <h1>Client Details</h1>
+          </div>
+
+          <section class="detail-profile">
+            <i class="icon-bio"></i>
+            <div class="detail-profile-text">
+              <h2>Biosimilar MAB</h2>
+              <p>
+                Biosimilar MAB is a biotechnology company that researches and
+                develops next-generation biosimilar drugs based on innovative
+                monoclonal antibody (MAB) technology.
+              </p>
+            </div>
+            <p class="detail-join-date">Join Date <span>2025.02.25</span></p>
+          </section>
+
+          <section class="detail-card">
+            <div class="detail-card-body">
+              <div class="detail-side-title">
+                <i class="icon-info"></i>
+                <h3>Basic Info</h3>
+              </div>
+              <div class="detail-side-content">
+                <div class="detail-grid detail-grid-3">
+                  <div>
+                    <p class="label">Company Name</p>
+                    <p class="value">Biosimilar MAB</p>
+                  </div>
+                  <div>
+                    <p class="label">Ceo</p>
+                    <p class="value">홍길동</p>
+                  </div>
+                  <div>
+                    <p class="label">Founded</p>
+                    <p class="value">2017.05.12</p>
+                  </div>
+                  <div>
+                    <p class="label">Business Type</p>
+                    <p class="value">Biosimilar development</p>
+                  </div>
+                  <div>
+                    <p class="label">Development Of Product</p>
+                    <p class="value">Mab based anti-cancer</p>
+                  </div>
+                  <div>
+                    <p class="label">Homepage</p>
+                    <p class="value">http://www.biosimilar-korea.com/</p>
+                  </div>
+                  <div>
+                    <p class="label">Homepage</p>
+                    <p class="value">http://www.biosimilar-korea.com</p>
+                  </div>
+                  <div class="span-2">
+                    <p class="label">Address</p>
+                    <p class="value">경기도 하남시 미사강변중앙로10, 영동스마트타워 710호</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section class="detail-card">
+            <div class="detail-card-body">
+              <div class="detail-side-title">
+                <i class="icon-manager"></i>
+                <h3>Manager Info</h3>
+              </div>
+              <div class="detail-side-content">
+                <div class="detail-grid detail-grid-3">
+                  <div>
+                    <p class="label">Name</p>
+                    <p class="value">김영민</p>
+                  </div>
+                  <div>
+                    <p class="label">Email</p>
+                    <p class="value">abc@gmail.com</p>
+                  </div>
+                  <div>
+                    <p class="label">Phone</p>
+                    <p class="value">010-123-1234</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section class="detail-project">
+            <div class="detail-project-head">
+              <p class="detail-project-title">
+                Project Info <span>Total 15</span>
+              </p>
+              <div class="detail-project-tools">
+                <div class="detail-filter">
+                  <button type="button" class="active">
+                    <span class="radio-dot"></span><span>ALL</span>
+                  </button>
+                  <button type="button">
+                    <span class="radio-dot"></span><span>In Progress</span>
+                  </button>
+                  <button type="button">
+                    <span class="radio-dot"></span><span>pending</span>
+                  </button>
+                  <button type="button">
+                    <span class="radio-dot"></span><span>completed</span>
+                  </button>
+                </div>
+                <div class="client-toolbar">
+                  <i class="icon-search"></i>
+                  <input class="client-search" type="text" placeholder="Project Name"/>
+                </div>
+              </div>
+            </div>
+
+            <section class="client-table-wrap">
+              <table class="client-table detail-table">
+                <thead>
+                  <tr>
+                    <th>NO</th>
+                    <th>Start Date</th>
+                    <th>End Date</th>
+                    <th>Project Name</th>
+                    <th>Development Stage</th>
+                    <th>Progress</th>
+                    <th>Status</th>
+                    <th>Experiment Details</th>
+                    <th>project</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>1</td>
+                    <td>2022.04.23</td>
+                    <td>2014.10.30</td>
+                    <td>
+                      Preclinical Study of a Novel Drug Candidate for
+                      Immunological Diseases
+                    </td>
+                    <td>Discovery</td>
+                    <td>50%</td>
+                    <td>In Progress</td>
+                    <td>
+                      Cell Viability / Endotoxin / Mycoplasma Detection / Mouse
+                      Toxicity
+                    </td>
+                    <td><button class="detail-view-btn">View</button></td>
+                  </tr>
+                  <tr>
+                    <td>2</td>
+                    <td>2022.05.12</td>
+                    <td>2022.05.12</td>
+                    <td>
+                      Preclinical Study of a Target Protein Therapeutic for Rare
+                      Diseases
+                    </td>
+                    <td>pre-clinical</td>
+                    <td>100%</td>
+                    <td>Pending</td>
+                    <td>Cell Viability / Mouse Toxicity / Cell Viability</td>
+                    <td><button class="detail-view-btn">View</button></td>
+                  </tr>
+                  <tr>
+                    <td>3</td>
+                    <td>2020.03.18</td>
+                    <td>2020.03.18</td>
+                    <td>reclinical Study of an Antiviral Drug Candidate</td>
+                    <td>Discovery</td>
+                    <td>24%</td>
+                    <td>In Progress</td>
+                    <td>Cell Viability</td>
+                    <td><button class="detail-view-btn">View</button></td>
+                  </tr>
+                  <tr>
+                    <td>4</td>
+                    <td>2024.01.12</td>
+                    <td>2024.03.02</td>
+                    <td>
+                      Toxicity Assessment of Recombinant Enzyme for Genetic
+                      Disorders
+                    </td>
+                    <td>Discovery</td>
+                    <td>53%</td>
+                    <td>Completed</td>
+                    <td>Cell Viability</td>
+                    <td><button class="detail-view-btn">View</button></td>
+                  </tr>
+                  <tr>
+                    <td>5</td>
+                    <td>2020.03.18</td>
+                    <td>2023.07.21</td>
+                    <td>Preclinical Safety Study of Novel Antibody Fragment</td>
+                    <td>pre-clinical</td>
+                    <td>72%</td>
+                    <td>Pending</td>
+                    <td>Cytotoxicity / Endotoxin / Cell Viability</td>
+                    <td><button class="detail-view-btn">View</button></td>
+                  </tr>
+                  <tr>
+                    <td>6</td>
+                    <td>2024.01.12</td>
+                    <td>2020.09.08</td>
+                    <td>Dose-Response Analysis of Peptide Drug Candidate</td>
+                    <td>pre-clinical</td>
+                    <td>94%</td>
+                    <td>In Progress</td>
+                    <td>Mycoplasma Detection / Cell Viability</td>
+                    <td><button class="detail-view-btn">View</button></td>
+                  </tr>
+                  <tr>
+                    <td>7</td>
+                    <td>2024.01.12</td>
+                    <td>2024.03.02</td>
+                    <td>Pharmacokinetic Study of Small Molecule Inhibitor</td>
+                    <td>IND-enabling</td>
+                    <td>83%</td>
+                    <td>In Progress</td>
+                    <td>PK Analysis / Mouse Toxicity</td>
+                    <td><button class="detail-view-btn">View</button></td>
+                  </tr>
+                  <tr>
+                    <td>8</td>
+                    <td>2020.03.18</td>
+                    <td>2020.03.18</td>
+                    <td>Efficacy Evaluation of mRNA-based Vaccine Prototype</td>
+                    <td>IND-enabling</td>
+                    <td>19%</td>
+                    <td>Completed</td>
+                    <td>Cell Viability / ELISA Assay</td>
+                    <td><button class="detail-view-btn">View</button></td>
+                  </tr>
+                  <tr>
+                    <td>9</td>
+                    <td>2020.03.18</td>
+                    <td>2023.07.21</td>
+                    <td>Immunogenicity Evaluation of New Biologic Molecule</td>
+                    <td>pre-clinical</td>
+                    <td>79%</td>
+                    <td>In Progress</td>
+                    <td>Endotoxin / Cell Viability / Mycoplasma Detection</td>
+                    <td><button class="detail-view-btn">View</button></td>
+                  </tr>
+                  <tr>
+                    <td>10</td>
+                    <td>2024.03.02</td>
+                    <td>2022.05.12</td>
+                    <td>
+                      Toxicity Assessment of Recombinant Enzyme for Genetic
+                      Disorders
+                    </td>
+                    <td>IND-enabling</td>
+                    <td>90%</td>
+                    <td>Pending</td>
+                    <td>ELISA / Cell Viability</td>
+                    <td><button class="detail-view-btn">View</button></td>
+                  </tr>
+                </tbody>
+              </table>
+            </section>
+
+            <div class="client-pagination">
+              <button class="client-page-btn icon-btn" type="button" aria-label="First page">
+                <i class="icon-First"></i>
+              </button>
+              <button class="client-page-btn icon-btn" type="button" aria-label="Previous page">
+                <i class="icon-Prev"></i>
+              </button>
+              <button class="client-page-btn active" type="button">1</button>
+              <button class="client-page-btn" type="button">2</button>
+              <button class="client-page-btn" type="button">3</button>
+              <button class="client-page-btn icon-btn icon-btn-dot" type="button" aria-label="More pages">
+                <i class="icon-Date"></i>
+              </button>
+              <button class="client-page-btn" type="button">10</button>
+              <button class="client-page-btn icon-btn" type="button" aria-label="Next page">
+                <i class="icon-Next"></i>
+              </button>
+              <button class="client-page-btn icon-btn" type="button" aria-label="Last page">
+                <i class="icon-Last"></i>
+              </button>
+            </div>
+          </section>
+        </main>
+      </div>
+    </div>
+    <script src="../js/sidebar-toggle.js"></script>
+    <script src="../js/ui-controls.js"></script>
+  </body>
+</html>

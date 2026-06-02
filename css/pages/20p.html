@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>20p</title>
+    <link rel="stylesheet" href="../css/layout.css" />
+    <link rel="stylesheet" href="../css/main.css" />
+  </head>
+  <body>
+    <div class="app">
+      <aside class="sidebar">
+        <div class="sidebar-toggle-wrap">
+          <button type="button" class="sidebar-toggle" title="Toggle sidebar">
+            <img src="../image/icon-btn.svg" alt="" />
+          </button>
+        </div>
+
+        <div class="sidebar-body">
+          <a class="brand" href="#">
+            <img src="../image/logo.svg" alt="Haon BIOSOLUTIONS" />
+            <span class="brand-name">CROTREE</span>
+          </a>
+          <nav class="nav">
+            <ul>
+              <li>
+                <a class="active" href="#">
+                  <img class="nav-icon"src="../image/menubar/icon-dashboard.svg" alt=""/>
+                  <span>Dashboard</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img class="nav-icon" src="../image/menubar/icon-clients.svg" alt=""/>
+                  <span>Clients</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img class="nav-icon" src="../image/menubar/icon-project.svg" alt=""/>
+                  <span>Projects</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img class="nav-icon" src="../image/menubar/icon-testprep.svg" alt=""/>
+                  <span>Test Prep</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img class="nav-icon" src="../image/menubar/icon-logs.svg" alt=""/>
+                  <span>Logs</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img class="nav-icon" src="../image/menubar/icon-chat.svg" alt=""/>
+                  <span>Chat</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img class="nav-icon" src="../image/menubar/icon-qa.svg" alt=""/>
+                  <span>QA Comment</span>
+                </a>
+              </li>
+            </ul>
+          </nav>
+
+          <div class="sidebar-foot">
+            <a class="logout" href="#">
+              <img src="../image/icon-logout.svg" alt="" />
+              <span>Logout</span> 
+            </a>
+          </div>
+        </div>
+      </aside>
+
+      <div class="main">
+        <header class="topbar">
+          <div class="bell-wrap">
+            <a href="#" aria-label="notification">
+              <img src="../image/icon-bell.svg" alt="" />
+            </a>
+            <span class="badge">2</span>
+          </div>
+          <a class="avatar" href="#" aria-label="profile">
+            <img src="../image/icon-user.svg" alt="" />
+          </a>
+        </header>
+
+        <main class="content">
+          <div class="content-head">
+            <h1>Dashboard</h1>
+          </div>
+
+          <div class="dash-top">
+            <section class="dash-table-section">
+              <h2 class="dash-table-heading">Test&amp;Progress</h2>
+              <div class="dash-table-wrap">
+                <table class="dash-table">
+                  <thead>
+                    <tr>
+                      <th>Project Name</th>
+                      <th>Client Name</th>
+                      <th>Progress</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td class="col-project">
+                        <span class="ellipsis">Preclinical Study of a Novel Drug Candidate ForImmune Disease Therapy</span>
+                      </td>
+                      <td>BiosimilarMAB</td>
+                      <td>50%</td>
+                    </tr>
+                    <tr>
+                      <td class="col-project">
+                        <span class="ellipsis">Preclinical Study of a Target Protein In TheComplement Pathway</span>
+                      </td>
+                      <td>mRNACorn</td>
+                      <td>32%</td>
+                    </tr>
+                    <tr>
+                      <td class="col-project">
+                        <span class="ellipsis">Preclinical Study of an Antiviral DrugCandidate</span>
+                      </td>
+                      <td>BiosimilarMAB</td>
+                      <td>54%</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </section>
+
+            <div class="summary-row">
+              <h2 class="dash-summary-heading">Number Of Total Project</h2>
+              <div class="summary-cards">
+                <div class="summary-card">
+                  <div class="summary-card-head">
+                    <div class="summary-icon summary-icon--progress"aria-hidden="true">
+                      <i class="icon-3"></i>
+                    </div>
+                    <p class="summary-label">In Progress</p>
+                  </div>
+                  <p class="summary-num">3</p>
+                </div>
+                <div class="summary-card">
+                  <div class="summary-card-head">
+                    <div class="summary-icon summary-icon--done"aria-hidden="true">
+                      <i class="icon-5"></i>
+                    </div>
+                    <p class="summary-label">Completed</p>
+                  </div>
+                  <p class="summary-num">5</p>
+                </div>
+                <div class="summary-card">
+                  <div class="summary-card-head">
+                    <div class="summary-icon summary-icon--total" aria-hidden="true">
+                      <i class="icon-8"></i>
+                    </div>
+                    <p class="summary-label">Total</p>
+                  </div>
+                  <p class="summary-num">8</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <h2 class="dash-grouped-title">Number Of Contract(Total)</h2>
+          <section class="dash-card grouped-chart">
+            <div class="chart-legend">
+              <span><i class="legend-vaccine"></i>Vaccine</span>
+              <span><i class="legend-therapeutics"></i>Therapeutics</span>
+              <span><i class="legend-diagnostics"></i>Diagnostics</span>
+            </div>
+            <div class="chart-area-placeholder chart-area-placeholder--tall"aria-label="chart area"></div>
+          </section>
+        </main>
+      </div>
+    </div>
+    <script src="../js/sidebar-toggle.js"></script>
+  </body>
+</html>
